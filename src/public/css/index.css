@@ -1,0 +1,272 @@
+body {
+    background-color: #f5f1e9;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.logout-btn{
+    background-color: #f6f6f6;
+    color: #d6cdc5;
+}
+
+.admin-container {
+    max-width: 1080px;
+    margin: 60px auto;
+    padding: 40px 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-heading {
+    font-size: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.search-form input[type="text"] {
+    grid-column: span 2;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.search-form input[name="keyword"] {
+    flex: 2;
+    min-width: 300px;
+}
+
+.search-form select[name="gender"],
+.search-form input[type="date"] {
+    min-width: 100px;
+}
+
+.search-form button,
+.search-form a.reset-btn {
+    min-width: 100px;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.search-form select[name="gender"] {
+    min-width: 100px;
+}
+
+.search-buttons {
+    display: flex;
+    gap: 12px;
+    grid-column: span 2;
+}
+
+.search-buttons button,
+.search-buttons a {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.reset-btn:hover {
+    background-color: #a67c52;
+}
+
+.search-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    grid-column: span 2;
+}
+
+.pagination-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.export-btn {
+    background-color: #a67c52;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.export-btn:hover {
+    background-color: #82766a;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.admin-table th {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    background-color: #82766a;
+    color: #fff;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.detail-btn {
+    background-color: #a67c52;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detail-btn:hover{
+    background-color: #A06A45;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#delete-form {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.pagination-top {
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.pagination li {
+    margin: 0 4px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: block;
+    padding: 6px 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.pagination li a:hover {
+    background-color: #e6e6e6;
+}
+
+.pagination .active span {
+    background-color: #82766a;
+    color: #fff;
+    border-color: #82766a;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+    font-size: 12px;
+    padding: 6px 10px;
+    line-height: 1;
+}
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after {
+    font-size: 12px;
+}
+
+.pagination li a,
+.pagination li span {
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+    font-size: 11px;
+    padding: 4px 8px;
+    color: #555;
+}

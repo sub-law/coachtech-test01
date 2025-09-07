@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-wrapper {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: rgba(200, 200, 200, 0.2);
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.thanks-box {
+    position: relative;
+    z-index: 2;
+}
+
+.message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #8B5E3C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #A06A45;
+}

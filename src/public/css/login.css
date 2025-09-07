@@ -1,0 +1,134 @@
+body {
+    background-color: #f5f1e9;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.register-container {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 40px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.register-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: #333;
+}
+
+.header-links {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.header__link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f6f6f5;
+    color: #d8d7d0;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.header__link:hover {
+    background-color: #a67c52;
+}
+
+.register-form .form-group {
+    margin-bottom: 24px;
+}
+
+.register-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.register-form input:focus {
+    border-color: #007bff;
+}
+
+.form-error {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #d9534f;
+}body {
+    background-color: #f5f1e9;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.login-container {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 40px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: #333;
+}
+
+.login-status {
+    margin-bottom: 1em;
+    padding: 0.75em;
+    background-color: #e6f7ff;
+    border-left: 4px solid #1890ff;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.login-form .form-group {
+    margin-bottom: 24px;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+    border-color: #a67c52;
+}
+
+.form-error {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #d9534f;
+}

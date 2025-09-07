@@ -1,0 +1,188 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 900px;
+    background: var(--c-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.contact-form__heading {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 22px;
+    color: var(--c-accent);
+}
+
+.form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form__group {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px 24px;
+    align-items: start;
+    margin-bottom: 18px;
+}
+
+.form__group-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.form__label--item {
+    font-weight: 600;
+}
+
+.form__label--required {
+    color: red;
+    font-weight: bold;
+}
+
+.form__group-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.form__group-content.is-row-2 .form__input--text {
+    flex: 1 1 260px;
+}
+
+.form__group-content.is-row-3 .form__input--text {
+    flex: 1 1 30%;
+}
+
+.form__group-content.is-row-3 .form__input--text input {
+    text-align: center;
+}
+
+.form__group-content.is-row-2 {
+    max-width: 600px;
+    width: 100%;
+    gap: 16px;
+}
+
+.form__group-content.is-row-3 {
+    max-width: 600px;
+    width: 100%;
+    gap: 12px;
+}
+
+.form__input--text input,
+.form__input--text select,
+.form__input--textarea textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 12px;
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--c-text);
+    font-size: 16px;
+    appearance: none;
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.form__input--text input:focus,
+.form__input--text select:focus,
+.form__input--textarea textarea:focus {
+    border-color: var(--c-accent);
+    box-shadow: 0 0 0 3px rgba(156, 142, 127, .15);
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+.form__input--text select {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+    padding-right: 36px;
+    appearance: none;
+}
+
+.form__input--text.is-half select {
+    max-width: 300px;
+    padding-right: 32px;
+    background-position: right 10px center;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.form__input--text,
+.form__input--textarea {
+    flex: 1 1 100%;
+    max-width: 600px;
+}
+
+.form__error {
+    flex-basis: 100%;
+    min-height: 18px;
+    color: #ff0000;
+    font-size: 13px;
+}
+
+.form__group-content label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form__button {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 12px 20px;
+    min-width: 220px;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity .15s ease, transform .04s ease;
+}
+
+.form__button-submit:hover {
+    opacity: .9;
+}
+
+.form__button-submit:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 720px) {
+    .form__group {
+        grid-template-columns: 1fr;
+    }
+
+    .form__group-title {
+        padding-top: 4px;
+    }
+
+    .form__group-content {
+        gap: 12px;
+    }
+}
